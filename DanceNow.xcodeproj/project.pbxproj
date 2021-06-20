@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BC6CC62267F819000C9D8BC /* DanceNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC61267F819000C9D8BC /* DanceNowApp.swift */; };
+		7BC6CC64267F819000C9D8BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC63267F819000C9D8BC /* ContentView.swift */; };
+		7BC6CC66267F819300C9D8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6CC65267F819300C9D8BC /* Assets.xcassets */; };
+		7BC6CC69267F819300C9D8BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6CC68267F819300C9D8BC /* Preview Assets.xcassets */; };
+		7BC6CC6B267F819300C9D8BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC6A267F819300C9D8BC /* Persistence.swift */; };
+		7BC6CC6E267F819300C9D8BC /* DanceNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC6C267F819300C9D8BC /* DanceNow.xcdatamodeld */; };
+		7BC6CC79267F819300C9D8BC /* DanceNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC78267F819300C9D8BC /* DanceNowTests.swift */; };
+		7BC6CC84267F819300C9D8BC /* DanceNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC83267F819300C9D8BC /* DanceNowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BC6CC75267F819300C9D8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC6CC56267F819000C9D8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC6CC5D267F819000C9D8BC;
+			remoteInfo = DanceNow;
+		};
+		7BC6CC80267F819300C9D8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC6CC56267F819000C9D8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC6CC5D267F819000C9D8BC;
+			remoteInfo = DanceNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BC6CC5E267F819000C9D8BC /* DanceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC6CC61267F819000C9D8BC /* DanceNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceNowApp.swift; sourceTree = "<group>"; };
+		7BC6CC63267F819000C9D8BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BC6CC65267F819300C9D8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BC6CC68267F819300C9D8BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BC6CC6A267F819300C9D8BC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7BC6CC6D267F819300C9D8BC /* DanceNow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DanceNow.xcdatamodel; sourceTree = "<group>"; };
+		7BC6CC6F267F819300C9D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC6CC74267F819300C9D8BC /* DanceNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC6CC78267F819300C9D8BC /* DanceNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceNowTests.swift; sourceTree = "<group>"; };
+		7BC6CC7A267F819300C9D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC6CC7F267F819300C9D8BC /* DanceNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC6CC83267F819300C9D8BC /* DanceNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceNowUITests.swift; sourceTree = "<group>"; };
+		7BC6CC85267F819300C9D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BC6CC5B267F819000C9D8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC6CC71267F819300C9D8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC6CC7C267F819300C9D8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BC6CC55267F819000C9D8BC = {
+			isa = PBXGroup;
+			children = (
+				7BC6CC60267F819000C9D8BC /* DanceNow */,
+				7BC6CC77267F819300C9D8BC /* DanceNowTests */,
+				7BC6CC82267F819300C9D8BC /* DanceNowUITests */,
+				7BC6CC5F267F819000C9D8BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BC6CC5F267F819000C9D8BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BC6CC5E267F819000C9D8BC /* DanceNow.app */,
+				7BC6CC74267F819300C9D8BC /* DanceNowTests.xctest */,
+				7BC6CC7F267F819300C9D8BC /* DanceNowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BC6CC60267F819000C9D8BC /* DanceNow */ = {
+			isa = PBXGroup;
+			children = (
+				7BC6CC61267F819000C9D8BC /* DanceNowApp.swift */,
+				7BC6CC63267F819000C9D8BC /* ContentView.swift */,
+				7BC6CC65267F819300C9D8BC /* Assets.xcassets */,
+				7BC6CC6A267F819300C9D8BC /* Persistence.swift */,
+				7BC6CC6F267F819300C9D8BC /* Info.plist */,
+				7BC6CC6C267F819300C9D8BC /* DanceNow.xcdatamodeld */,
+				7BC6CC67267F819300C9D8BC /* Preview Content */,
+			);
+			path = DanceNow;
+			sourceTree = "<group>";
+		};
+		7BC6CC67267F819300C9D8BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7BC6CC68267F819300C9D8BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BC6CC77267F819300C9D8BC /* DanceNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BC6CC78267F819300C9D8BC /* DanceNowTests.swift */,
+				7BC6CC7A267F819300C9D8BC /* Info.plist */,
+			);
+			path = DanceNowTests;
+			sourceTree = "<group>";
+		};
+		7BC6CC82267F819300C9D8BC /* DanceNowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BC6CC83267F819300C9D8BC /* DanceNowUITests.swift */,
+				7BC6CC85267F819300C9D8BC /* Info.plist */,
+			);
+			path = DanceNowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BC6CC5D267F819000C9D8BC /* DanceNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC6CC88267F819300C9D8BC /* Build configuration list for PBXNativeTarget "DanceNow" */;
+			buildPhases = (
+				7BC6CC5A267F819000C9D8BC /* Sources */,
+				7BC6CC5B267F819000C9D8BC /* Frameworks */,
+				7BC6CC5C267F819000C9D8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DanceNow;
+			productName = DanceNow;
+			productReference = 7BC6CC5E267F819000C9D8BC /* DanceNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BC6CC73267F819300C9D8BC /* DanceNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC6CC8B267F819300C9D8BC /* Build configuration list for PBXNativeTarget "DanceNowTests" */;
+			buildPhases = (
+				7BC6CC70267F819300C9D8BC /* Sources */,
+				7BC6CC71267F819300C9D8BC /* Frameworks */,
+				7BC6CC72267F819300C9D8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC6CC76267F819300C9D8BC /* PBXTargetDependency */,
+			);
+			name = DanceNowTests;
+			productName = DanceNowTests;
+			productReference = 7BC6CC74267F819300C9D8BC /* DanceNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BC6CC7E267F819300C9D8BC /* DanceNowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC6CC8E267F819300C9D8BC /* Build configuration list for PBXNativeTarget "DanceNowUITests" */;
+			buildPhases = (
+				7BC6CC7B267F819300C9D8BC /* Sources */,
+				7BC6CC7C267F819300C9D8BC /* Frameworks */,
+				7BC6CC7D267F819300C9D8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC6CC81267F819300C9D8BC /* PBXTargetDependency */,
+			);
+			name = DanceNowUITests;
+			productName = DanceNowUITests;
+			productReference = 7BC6CC7F267F819300C9D8BC /* DanceNowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BC6CC56267F819000C9D8BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7BC6CC5D267F819000C9D8BC = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7BC6CC73267F819300C9D8BC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7BC6CC5D267F819000C9D8BC;
+					};
+					7BC6CC7E267F819300C9D8BC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7BC6CC5D267F819000C9D8BC;
+					};
+				};
+			};
+			buildConfigurationList = 7BC6CC59267F819000C9D8BC /* Build configuration list for PBXProject "DanceNow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BC6CC55267F819000C9D8BC;
+			productRefGroup = 7BC6CC5F267F819000C9D8BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC6CC5D267F819000C9D8BC /* DanceNow */,
+				7BC6CC73267F819300C9D8BC /* DanceNowTests */,
+				7BC6CC7E267F819300C9D8BC /* DanceNowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BC6CC5C267F819000C9D8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC6CC69267F819300C9D8BC /* Preview Assets.xcassets in Resources */,
+				7BC6CC66267F819300C9D8BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC6CC72267F819300C9D8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC6CC7D267F819300C9D8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BC6CC5A267F819000C9D8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC6CC6E267F819300C9D8BC /* DanceNow.xcdatamodeld in Sources */,
+				7BC6CC6B267F819300C9D8BC /* Persistence.swift in Sources */,
+				7BC6CC64267F819000C9D8BC /* ContentView.swift in Sources */,
+				7BC6CC62267F819000C9D8BC /* DanceNowApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC6CC70267F819300C9D8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC6CC79267F819300C9D8BC /* DanceNowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC6CC7B267F819300C9D8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC6CC84267F819300C9D8BC /* DanceNowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BC6CC76267F819300C9D8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC6CC5D267F819000C9D8BC /* DanceNow */;
+			targetProxy = 7BC6CC75267F819300C9D8BC /* PBXContainerItemProxy */;
+		};
+		7BC6CC81267F819300C9D8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC6CC5D267F819000C9D8BC /* DanceNow */;
+			targetProxy = 7BC6CC80267F819300C9D8BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7BC6CC86267F819300C9D8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BC6CC87267F819300C9D8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BC6CC89267F819300C9D8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DanceNow/Preview Content\"";
+				DEVELOPMENT_TEAM = 937MK3AF6X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DanceNow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciasampaiosiqueira.DanceNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BC6CC8A267F819300C9D8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DanceNow/Preview Content\"";
+				DEVELOPMENT_TEAM = 937MK3AF6X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DanceNow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciasampaiosiqueira.DanceNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BC6CC8C267F819300C9D8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 937MK3AF6X;
+				INFOPLIST_FILE = DanceNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciasampaiosiqueira.DanceNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanceNow.app/DanceNow";
+			};
+			name = Debug;
+		};
+		7BC6CC8D267F819300C9D8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 937MK3AF6X;
+				INFOPLIST_FILE = DanceNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciasampaiosiqueira.DanceNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanceNow.app/DanceNow";
+			};
+			name = Release;
+		};
+		7BC6CC8F267F819300C9D8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 937MK3AF6X;
+				INFOPLIST_FILE = DanceNowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciasampaiosiqueira.DanceNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DanceNow;
+			};
+			name = Debug;
+		};
+		7BC6CC90267F819300C9D8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 937MK3AF6X;
+				INFOPLIST_FILE = DanceNowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciasampaiosiqueira.DanceNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DanceNow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BC6CC59267F819000C9D8BC /* Build configuration list for PBXProject "DanceNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC6CC86267F819300C9D8BC /* Debug */,
+				7BC6CC87267F819300C9D8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC6CC88267F819300C9D8BC /* Build configuration list for PBXNativeTarget "DanceNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC6CC89267F819300C9D8BC /* Debug */,
+				7BC6CC8A267F819300C9D8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC6CC8B267F819300C9D8BC /* Build configuration list for PBXNativeTarget "DanceNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC6CC8C267F819300C9D8BC /* Debug */,
+				7BC6CC8D267F819300C9D8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC6CC8E267F819300C9D8BC /* Build configuration list for PBXNativeTarget "DanceNowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC6CC8F267F819300C9D8BC /* Debug */,
+				7BC6CC90267F819300C9D8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7BC6CC6C267F819300C9D8BC /* DanceNow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BC6CC6D267F819300C9D8BC /* DanceNow.xcdatamodel */,
+			);
+			currentVersion = 7BC6CC6D267F819300C9D8BC /* DanceNow.xcdatamodel */;
+			path = DanceNow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7BC6CC56267F819000C9D8BC /* Project object */;
+}
