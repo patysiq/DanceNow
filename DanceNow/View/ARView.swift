@@ -11,9 +11,6 @@ import SwiftUI
 import RealityKit
 import Combine
 
-var bodySkeleton: BodySkeleton?
-var bodySkeletonAnchor = AnchorEntity()
-
 // MARK: - ARViewIndicator
 struct ARViewIndicator: UIViewControllerRepresentable {
    typealias UIViewControllerType = ARViewScene
@@ -90,7 +87,7 @@ class ARViewScene: UIViewController, ARSessionDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
        super.viewWillAppear(animated)
-       let configuration = ARBodyTrackingConfiguration()//ARWorldTrackingConfiguration()
+       let configuration = ARBodyTrackingConfiguration()
        arView.session.run(configuration)
         arView.session.delegate = self
     }
@@ -109,38 +106,13 @@ class ARViewScene: UIViewController, ARSessionDelegate {
             // Update the position of the character anchor's position.
             let bodyPosition = simd_make_float3(bodyAnchor.transform.columns.3)
             characterAnchor.position = bodyPosition + characterOffset
-            // Also copy over the rotation of the body anchor, because the skeleton's pose
-            // in the world is relative to the body anchor's rotation.
             characterAnchor.orientation = Transform(matrix: bodyAnchor.transform).rotation
    
             if let character = character, character.parent == nil {
-                // Attach the character to its anchor as soon as
-                // 1. the body anchor was detected and
-                // 2. the character was loaded.
                 characterAnchor.addChild(character)
             }
         }
     }
-    
-//    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
-//        //bodySkeletonAnchor.addChild(skeleton)
-//
-//        for anchor in anchors {
-//            if let bodyAnchor = anchor as? ARBodyAnchor {
-//                //Create or update bodySkeleton
-//                if let skeleton = bodySkeleton {
-//                    //BodySkeleton  already exists, update pose os all joints
-//                    skeleton.update(with: bodyAnchor)
-//                } else {
-//                    //Seeing body for the first time, create bodySkeleton
-//                    let skeleton = BodySkeleton(for: bodyAnchor)
-//                    bodySkeleton = skeleton
-//                    bodySkeletonAnchor.addChild(skeleton)
-//                }
-//            }
-//        }
-//    }
-    
 }
 
 // MARK: - NavigationIndicator

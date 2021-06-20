@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B17F259267FCE7600363875 /* character in Resources */ = {isa = PBXBuildFile; fileRef = 7B17F258267FCE7600363875 /* character */; };
 		7BC6CC62267F819000C9D8BC /* DanceNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC61267F819000C9D8BC /* DanceNowApp.swift */; };
 		7BC6CC64267F819000C9D8BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC63267F819000C9D8BC /* ContentView.swift */; };
 		7BC6CC66267F819300C9D8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6CC65267F819300C9D8BC /* Assets.xcassets */; };
@@ -15,15 +16,15 @@
 		7BC6CC6E267F819300C9D8BC /* DanceNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC6C267F819300C9D8BC /* DanceNow.xcdatamodeld */; };
 		7BC6CC79267F819300C9D8BC /* DanceNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC78267F819300C9D8BC /* DanceNowTests.swift */; };
 		7BC6CC84267F819300C9D8BC /* DanceNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC83267F819300C9D8BC /* DanceNowUITests.swift */; };
-		7BC6CC93267F832D00C9D8BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC92267F832D00C9D8BC /* HomeView.swift */; };
-		7BC6CC95267F835000C9D8BC /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC94267F835000C9D8BC /* SkeletonView.swift */; };
 		7BC6CC98267F836A00C9D8BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC97267F836A00C9D8BC /* HomeViewModel.swift */; };
-		7BC6CC9A267F837800C9D8BC /* SkeletonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC99267F837800C9D8BC /* SkeletonViewModel.swift */; };
 		7BC6CC9D267F839800C9D8BC /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC9C267F839800C9D8BC /* HomeModel.swift */; };
 		7BC6CCA0267F83B900C9D8BC /* SoundsShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC9F267F83B900C9D8BC /* SoundsShared.swift */; };
-		7BC6CCA2267F845000C9D8BC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CCA1267F845000C9D8BC /* ARViewContainer.swift */; };
 		7BC6CCA4267F89DE00C9D8BC /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CCA3267F89DE00C9D8BC /* ARView.swift */; };
-		7BC7066C267F97610060DF61 /* character in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7066B267F97610060DF61 /* character */; };
+		7BF18F1C267FCF8A004E4D2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18F1B267FCF8A004E4D2F /* HomeView.swift */; };
+		7BF18F1E267FD963004E4D2F /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18F1D267FD963004E4D2F /* LottieView.swift */; };
+		7BF18F21267FDB9E004E4D2F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7BF18F20267FDB9E004E4D2F /* Lottie */; };
+		7BF18F23267FDBF0004E4D2F /* LauchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18F22267FDBF0004E4D2F /* LauchView.swift */; };
+		7BF18F26267FDE56004E4D2F /* dance.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BF18F25267FDE56004E4D2F /* dance.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B17F258267FCE7600363875 /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 		7BC6CC5E267F819000C9D8BC /* DanceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC6CC61267F819000C9D8BC /* DanceNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceNowApp.swift; sourceTree = "<group>"; };
 		7BC6CC63267F819000C9D8BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,15 +60,14 @@
 		7BC6CC7F267F819300C9D8BC /* DanceNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC6CC83267F819300C9D8BC /* DanceNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceNowUITests.swift; sourceTree = "<group>"; };
 		7BC6CC85267F819300C9D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BC6CC92267F832D00C9D8BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		7BC6CC94267F835000C9D8BC /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
 		7BC6CC97267F836A00C9D8BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		7BC6CC99267F837800C9D8BC /* SkeletonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewModel.swift; sourceTree = "<group>"; };
 		7BC6CC9C267F839800C9D8BC /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7BC6CC9F267F83B900C9D8BC /* SoundsShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsShared.swift; sourceTree = "<group>"; };
-		7BC6CCA1267F845000C9D8BC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		7BC6CCA3267F89DE00C9D8BC /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
-		7BC7066B267F97610060DF61 /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
+		7BF18F1B267FCF8A004E4D2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7BF18F1D267FD963004E4D2F /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		7BF18F22267FDBF0004E4D2F /* LauchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchView.swift; sourceTree = "<group>"; };
+		7BF18F25267FDE56004E4D2F /* dance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dance.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF18F21267FDB9E004E4D2F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +119,7 @@
 		7BC6CC60267F819000C9D8BC /* DanceNow */ = {
 			isa = PBXGroup;
 			children = (
-				7BC7066B267F97610060DF61 /* character */,
+				7B17F258267FCE7600363875 /* character */,
 				7BC6CC9E267F839F00C9D8BC /* Utils */,
 				7BC6CC9B267F838900C9D8BC /* Model */,
 				7BC6CC96267F835900C9D8BC /* ViewModel */,
@@ -162,10 +164,10 @@
 		7BC6CC91267F831100C9D8BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7BC6CC92267F832D00C9D8BC /* HomeView.swift */,
-				7BC6CC94267F835000C9D8BC /* SkeletonView.swift */,
-				7BC6CCA1267F845000C9D8BC /* ARViewContainer.swift */,
 				7BC6CCA3267F89DE00C9D8BC /* ARView.swift */,
+				7BF18F1B267FCF8A004E4D2F /* HomeView.swift */,
+				7BF18F1D267FD963004E4D2F /* LottieView.swift */,
+				7BF18F22267FDBF0004E4D2F /* LauchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				7BC6CC97267F836A00C9D8BC /* HomeViewModel.swift */,
-				7BC6CC99267F837800C9D8BC /* SkeletonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,9 +191,18 @@
 		7BC6CC9E267F839F00C9D8BC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7BF18F24267FDC17004E4D2F /* Animations */,
 				7BC6CC9F267F83B900C9D8BC /* SoundsShared.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7BF18F24267FDC17004E4D2F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7BF18F25267FDE56004E4D2F /* dance.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +221,9 @@
 			dependencies = (
 			);
 			name = DanceNow;
+			packageProductDependencies = (
+				7BF18F20267FDB9E004E4D2F /* Lottie */,
+			);
 			productName = DanceNow;
 			productReference = 7BC6CC5E267F819000C9D8BC /* DanceNow.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 7BC6CC55267F819000C9D8BC;
+			packageReferences = (
+				7BF18F1F267FDB9E004E4D2F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 7BC6CC5F267F819000C9D8BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,7 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC7066C267F97610060DF61 /* character in Resources */,
+				7B17F259267FCE7600363875 /* character in Resources */,
+				7BF18F26267FDE56004E4D2F /* dance.json in Resources */,
 				7BC6CC69267F819300C9D8BC /* Preview Assets.xcassets in Resources */,
 				7BC6CC66267F819300C9D8BC /* Assets.xcassets in Resources */,
 			);
@@ -325,18 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF18F1C267FCF8A004E4D2F /* HomeView.swift in Sources */,
+				7BF18F23267FDBF0004E4D2F /* LauchView.swift in Sources */,
 				7BC6CCA0267F83B900C9D8BC /* SoundsShared.swift in Sources */,
 				7BC6CC6E267F819300C9D8BC /* DanceNow.xcdatamodeld in Sources */,
-				7BC6CCA2267F845000C9D8BC /* ARViewContainer.swift in Sources */,
 				7BC6CC6B267F819300C9D8BC /* Persistence.swift in Sources */,
 				7BC6CC9D267F839800C9D8BC /* HomeModel.swift in Sources */,
 				7BC6CCA4267F89DE00C9D8BC /* ARView.swift in Sources */,
 				7BC6CC98267F836A00C9D8BC /* HomeViewModel.swift in Sources */,
-				7BC6CC9A267F837800C9D8BC /* SkeletonViewModel.swift in Sources */,
+				7BF18F1E267FD963004E4D2F /* LottieView.swift in Sources */,
 				7BC6CC64267F819000C9D8BC /* ContentView.swift in Sources */,
-				7BC6CC93267F832D00C9D8BC /* HomeView.swift in Sources */,
 				7BC6CC62267F819000C9D8BC /* DanceNowApp.swift in Sources */,
-				7BC6CC95267F835000C9D8BC /* SkeletonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +672,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BF18F1F267FDB9E004E4D2F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BF18F20267FDB9E004E4D2F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BF18F1F267FDB9E004E4D2F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7BC6CC6C267F819300C9D8BC /* DanceNow.xcdatamodeld */ = {
