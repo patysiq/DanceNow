@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct HomeView: View {
    @State var page = "Home"
@@ -38,12 +39,14 @@ struct HomeView: View {
    
     var body: some View {
         NavigationView {
-            ZStack {
-                Color("backgound").edgesIgnoringSafeArea(.all)
+
                 VStack {
                     if page == "Home" {
-                        Button("Dance now with me") {
-                            self.page = "ARView"
+                        ZStack {
+                            Color("backColor").edgesIgnoringSafeArea(.all)
+                            Button("Dance now with me") {
+                                self.page = "ARView"
+                            }
                         }
                     } else if page == "ARView" {
                         ZStack {
@@ -60,7 +63,6 @@ struct HomeView: View {
                         }
                     }
                 }
-            }
             .navigationBarTitle("Dance Now", displayMode: .inline)
         }
     }
