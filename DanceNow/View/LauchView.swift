@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct LauchView: View {
+    @State private var isActive = false
     
     var body: some View {
-        ZStack{
-            Color("background")
-                .edgesIgnoringSafeArea(.all)
-            LottieView(name: "dance", loopMode: .loop)
-                .frame(width: 250, height: 250)
+        VStack {
+            if isActive {
+                HomeView()
+            } else {
+                ZStack {
+                    Color("background")
+                        .edgesIgnoringSafeArea(.all)
+                    VStack(spacing: 10) {
+                        Text("Dance Now")
+                            .foregroundColor(Color("text"))
+                            .font(.system(size: 60))
+                            .bold()
+                        LottieView(name: "dance", loopMode: .loop)
+                            .frame(width: 250, height: 250)
+                    }
+                }
+            }
+        }
+        .onAppear(perform: {
+            self.gotoHomeView(time: 2.5)
+        })
+        
+    }
+    func gotoHomeView(time: Double) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(time)) {
+            withAnimation {
+                self.isActive = true
+            }
         }
     }
 }
@@ -24,3 +48,4 @@ struct LauchView_Previews: PreviewProvider {
         LauchView()
     }
 }
+
