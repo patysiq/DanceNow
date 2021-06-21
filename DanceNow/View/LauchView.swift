@@ -16,7 +16,7 @@ struct LauchView: View {
                 HomeView()
             } else {
                 ZStack {
-                    Color("background")
+                    Color("backColor")
                         .edgesIgnoringSafeArea(.all)
                     VStack(spacing: 10) {
                         Text("Dance Now")
