@@ -14,9 +14,6 @@ struct DanceNowApp: App {
     var body: some Scene {
         WindowGroup {
             LauchView()
-          //  HomeView()
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

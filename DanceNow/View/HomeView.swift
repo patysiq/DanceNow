@@ -51,6 +51,7 @@ struct HomeView: View {
                     } else if page == "ARView" {
                         ZStack {
                             NavigationIndicator()
+                                .edgesIgnoringSafeArea(.all)
                             VStack {
                                 Spacer()
                                 Spacer()
@@ -63,7 +64,6 @@ struct HomeView: View {
                         }
                     }
                 }
-            .navigationBarTitle("Dance Now", displayMode: .inline)
         }
     }
 }

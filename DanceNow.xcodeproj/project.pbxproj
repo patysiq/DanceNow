@@ -20,6 +20,8 @@
 		7BC6CC9D267F839800C9D8BC /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC9C267F839800C9D8BC /* HomeModel.swift */; };
 		7BC6CCA0267F83B900C9D8BC /* SoundsShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CC9F267F83B900C9D8BC /* SoundsShared.swift */; };
 		7BC6CCA4267F89DE00C9D8BC /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6CCA3267F89DE00C9D8BC /* ARView.swift */; };
+		7BC73F3B2681478A0069DA17 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC73F3A2681478A0069DA17 /* AuthenticationServices.framework */; };
+		7BC73F3D268147C90069DA17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC73F3C268147C90069DA17 /* AudioToolbox.framework */; };
 		7BF18F1C267FCF8A004E4D2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18F1B267FCF8A004E4D2F /* HomeView.swift */; };
 		7BF18F1E267FD963004E4D2F /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18F1D267FD963004E4D2F /* LottieView.swift */; };
 		7BF18F21267FDB9E004E4D2F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7BF18F20267FDB9E004E4D2F /* Lottie */; };
@@ -64,6 +66,9 @@
 		7BC6CC9C267F839800C9D8BC /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7BC6CC9F267F83B900C9D8BC /* SoundsShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsShared.swift; sourceTree = "<group>"; };
 		7BC6CCA3267F89DE00C9D8BC /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		7BC73F38268147500069DA17 /* DanceNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DanceNow.entitlements; sourceTree = "<group>"; };
+		7BC73F3A2681478A0069DA17 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		7BC73F3C268147C90069DA17 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7BF18F1B267FCF8A004E4D2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7BF18F1D267FD963004E4D2F /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		7BF18F22267FDBF0004E4D2F /* LauchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchView.swift; sourceTree = "<group>"; };
@@ -75,7 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC73F3B2681478A0069DA17 /* AuthenticationServices.framework in Frameworks */,
 				7BF18F21267FDB9E004E4D2F /* Lottie in Frameworks */,
+				7BC73F3D268147C90069DA17 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +110,7 @@
 				7BC6CC77267F819300C9D8BC /* DanceNowTests */,
 				7BC6CC82267F819300C9D8BC /* DanceNowUITests */,
 				7BC6CC5F267F819000C9D8BC /* Products */,
+				7BC73F392681478A0069DA17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +127,7 @@
 		7BC6CC60267F819000C9D8BC /* DanceNow */ = {
 			isa = PBXGroup;
 			children = (
+				7BC73F38268147500069DA17 /* DanceNow.entitlements */,
 				7B17F258267FCE7600363875 /* character */,
 				7BC6CC9E267F839F00C9D8BC /* Utils */,
 				7BC6CC9B267F838900C9D8BC /* Model */,
@@ -195,6 +204,15 @@
 				7BC6CC9F267F83B900C9D8BC /* SoundsShared.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7BC73F392681478A0069DA17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BC73F3C268147C90069DA17 /* AudioToolbox.framework */,
+				7BC73F3A2681478A0069DA17 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7BF18F24267FDC17004E4D2F /* Animations */ = {
@@ -509,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DanceNow/DanceNow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DanceNow/Preview Content\"";
 				DEVELOPMENT_TEAM = 937MK3AF6X;
@@ -531,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DanceNow/DanceNow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DanceNow/Preview Content\"";
 				DEVELOPMENT_TEAM = 937MK3AF6X;
