@@ -6,3 +6,11 @@
 //
 
 import Foundation
+//
+//class HomeViewModel: ObservableObject {
+//    @Published var isFace: Bool = false
+//    
+//    init(isFace: Bool) {
+//        self.isFace = isFace
+//    }
+//}

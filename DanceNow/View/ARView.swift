@@ -24,12 +24,13 @@ struct ARViewIndicator: UIViewControllerRepresentable {
 }
 
 
-class ARViewScene: UIViewController, ARSessionDelegate {
+class ARViewScene: UIViewController, ARSessionDelegate{
     
     // The 3D character to display.
     var character: BodyTrackedEntity?
     let characterOffset: SIMD3<Float> = [-1.0, 0, 0] // Offset the character by one meter to the left
     let characterAnchor = AnchorEntity()
+    //@State var isFace: Bool
     
     var arView: ARView {
          return self.view as! ARView
@@ -41,7 +42,6 @@ class ARViewScene: UIViewController, ARSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         arView.session.delegate = self
-        //arView.scene = SCNScene()
      }
     
     // MARK: - Functions for standard AR view handling
@@ -56,8 +56,13 @@ class ARViewScene: UIViewController, ARSessionDelegate {
         }
 
         // Run a body tracking configration.
-        let configuration = ARBodyTrackingConfiguration()
-        arView.session.run(configuration)
+//        if homeViewModel.isFace {
+//            let configuration = ARFaceTrackingConfiguration()
+//            arView.session.run(configuration)
+//        } else {
+            let configuration = ARBodyTrackingConfiguration()
+            arView.session.run(configuration)
+      //  }
         
         arView.scene.addAnchor(characterAnchor)
         

@@ -7,11 +7,13 @@
 
 import SwiftUI
 import UIKit
+import ARKit
 
-struct HomeView: View {
-   @State var page = "Home"
+struct HomeView: View{
+    @State var page = "Home"
+    //@Binding var isFace:Bool
     
-    init() {
+    init(isFace:Bool = false) {
         let appearance = UINavigationBarAppearance()
                 // this overrides everything you have set up earlier.
                 appearance.configureWithTransparentBackground()
@@ -34,12 +36,10 @@ struct HomeView: View {
                 // This property is not present on the UINavigationBarAppearance
                 // object for some reason and you have to leave it til the end
                 UINavigationBar.appearance().tintColor = .white
-
         }
-   
+
     var body: some View {
         NavigationView {
-
                 VStack {
                     if page == "Home" {
                         ZStack {
@@ -55,11 +55,21 @@ struct HomeView: View {
                             VStack {
                                 Spacer()
                                 Spacer()
-                                Button("Home") {
-                                    self.page = "Home"
-                                }.padding()
-                                .background(RoundedRectangle(cornerRadius: 10)
-                                        .foregroundColor(Color("text")).opacity(0.7))
+                                HStack{
+                                    Button("Home") {
+                                        self.page = "Home"
+                                    }.padding()
+                                    .background(RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color("text")).opacity(0.7))
+//                                    Button(action: {self.isFace.toggle()}) {
+//                                        Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
+//                                            .resizable()
+//                                            .aspectRatio(contentMode: .fill)
+//                                            .frame(width: 25, height: 25, alignment: .center)
+//                                            .padding(.leading, 20)
+//                                    }
+                                }
+
                             }
                         }
                     }
@@ -70,8 +80,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(isFace: false)
     }
 }
-
-
