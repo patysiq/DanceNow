@@ -11,8 +11,8 @@ jobs:
 
     runs-on: macOS-latest
     strategy:
-        matrix:
-          destination: ['platform=iOS Simulator,OS=14.4, name=iPhone 11']
+      matrix:
+        destination: ['platform=iOS Simulator,OS=14.4,name=iPhone 12']
     steps:
 
     - name: Checkout
