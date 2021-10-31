@@ -21,7 +21,9 @@ jobs:
     - name: Build and Test
       run: |
         pwd
-        xcrun instruments -w 'iPhone 12 (14.4)' || sleep 15
-        xcodebuild clean test -project DanceNow.xcodeproj -scheme DanceNow -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-      env: 
-        destination: ${{ matrix.destination}}
+        xcodebuild build-for-testing \
+        -scheme DanceNow \
+        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+        -derivedDataPath build \
+        | xcpretty
+
